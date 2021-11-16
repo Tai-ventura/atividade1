@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Propriedades</title>
+    <style>
+        body {
+            background-color: hotpink;
+        }
+        h1 {
+            color: green;
+            font-size: 30px;   
+        }
+        input{
+            display: block;
+            margin-bottom: 10px;
+            background-color: lightseagreen;
+        }
+        label{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .tracejado{
+            border: dashed 2px #000;
+            background-color: #fff;        
+        }
+        #campo_email{
+            height: 45px;
+            background-color: rgb(123, 27, 133);
+        }
+
+        #box-exemplo{
+            width: 400px;
+            height: 400px;
+            background-color: #00000080;
+            position: absolute;
+            top: 0px;
+            z-index: 1;
+        }
+        form{
+            display: block;
+            z-index: 2;
+            position: absolute;
+        }
+    </style> 
+</head>
+<body>
+    <h1>Exemplo de propriedades</h1>
+
+    <form action="" method="post">
+        <label>Nome</label>
+        <input type="text" name="nome">
+
+        <label>E-mail</label>
+        <input class="tracejado" id="campo_email" type="email" name="email">
+
+        <label>Senha</label>
+        <input class="tracejado" type="password" name="senha">
+    </form>
+
+    <div id="box-exemplo"></div>
+</body>
+</html>
