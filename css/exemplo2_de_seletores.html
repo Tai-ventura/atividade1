@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Seletores 2</title>
+    <style>
+        body {
+            background-color: hotpink;
+        }
+        h1 {
+            color: green;
+            font-size: 30px;   
+        }
+        input{
+            display: block;
+            margin-bottom: 10px;
+            background-color: lightseagreen;
+        }
+        label{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .tracejado{
+            border: dashed 2px #000;
+            background-color: lawngreen;        
+        }
+    </style> 
+</head>
+<body>
+    <h1>Exemplo de Seletores CLASSES</h1>
+
+    <form action="" method="post">
+        <label>Nome</label>
+        <input type="text" name="nome">
+
+        <label>E-mail</label>
+        <input class="tracejado" type="email" name="email">
+
+        <label>Senha</label>
+        <input class="tracejado" type="password" name="senha">
+    </form>
+     <!--No exemplo aplicamos o estilo usando a CLASS e informando os comandos dentro da STYLE com (ponto .)-->
+</body>
+</html>
